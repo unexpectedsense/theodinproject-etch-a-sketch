@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Etch a Sketch</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="assets/css/styles.css" rel="stylesheet">
+        <script src="scripts/eas.js" defer ></script>
+    </head>
+    <body>
+        <div class="container">
+            <section class="interface">
+
+                <div class="squareAmount">
+                    <div class="display-title">Grid Density</div>
+                    <div class="display-value">DEFAULT</div>
+                    <div class="squares">13 x 13</div>
+
+                    <div class="default">
+                        <div class="gridDensityDefault">DEFAULT</div>
+                    </div>
+                    <div class="custom">
+                        <div class="gridDensityCustom">CUSTOM</div>
+                    </div>
+                </div>
+
+                <div class="decorativeFrame">
+                    <div class="playroom">
+                        <!-- boxes -->
+                    </div>
+                </div>
+
+                <div class="setBrush">
+                    <div class="display-title">Brush Pressure</div>
+                    <div class="solid">SOLID</div>
+                    <div id="rangeValue">20%</div>
+                    <div class="rangeDensityContainer">
+                        <Input class="rangeDensity" type="range"
+                            value="20" 
+                            min="10" max="100" 
+                            step="10">
+                        </Input>
+                    </div>
+                    <div class="progressive">PROGRESSIVE</div>
+                    <div class="eraseMode">ERASE MODE</div>
+                    <div class="resetPlayroom">RESET PLAYROOM</div>
+                </div>
+
+            </section>
+        </div>
+        <div class="theOdinProject"><span>TheOdinProject</span>.com</div> 
+    </body>
+</html>

@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin:0;
+    background-color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    background-color: #a49fa4;
+    color: #F9FAF8 ;
+}
+
+section{
+    min-height: 127px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 1366px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0;
+}
+
+section.interface{
+    width: 900px;
+    /* height: 720px; */
+    background-color: tomato;
+    padding: 56px 42px 46px 42px;
+    display: flex;
+    flex-flow: row;
+    border-radius: 24px;
+}
+
+.squareAmount{
+    background-color: #7b767b;
+    flex-flow: column;
+    flex: 1 1 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.display-title {
+    font-size: 14px;
+    font-weight: 100;
+    color: #daccda;
+}
+
+.squareAmount > div.display-value {
+    font-size: 16px;
+    font-weight: 300;
+    color: #daccda;
+    margin-top: -11px;
+}
+
+.squares{
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(214, 208, 208);
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.squareAmount > div.default {
+    width: 70px;
+    height: 70px;
+    border: 2px solid gray;
+    border-radius: 38px;
+    background-color: #3a383a;
+    padding: 3px;
+}
+
+.squareAmount > div.default > div {
+    background-color: #a49fa4;
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color:rgb(71, 67, 67);
+    cursor: pointer;
+}
+
+.squareAmount > div.default > div:hover {
+    background-color: #b7adb7;
+}
+
+.squareAmount > div.custom {
+    width: 110px;
+    height: 110px;
+    background-color: #3a383a;
+    border-radius: 55px;
+    border: 2px solid gray;
+}
+
+.squareAmount > div.custom > div {
+    width: 101px;
+    height: 101px;
+    background-color: #a49fa4;
+    font-size: 16px;
+    color:rgb(71, 67, 67);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.squareAmount > div.custom > div:hover {
+    background-color: #b7adb7;
+}
+
+.setBrush{
+    background-color: #7b767b;
+    display: flex;
+    flex-flow: column;
+    flex: 1 1 0%;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.decorativeFrame{
+    background-color: #4a474a;
+    padding: 18px;
+    border-radius: 6px;
+    width: 100%;
+    flex: 4 1 0%;
+}
+
+.setBrush .solid, .setBrush .progressive{
+    font-size: 16px;
+    font-weight: 300;
+    color: #daccda;
+}
+
+.solid{
+    margin-top: -9px;
+}
+
+#rangeValue {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(214, 208, 208);
+    font-weight: 400;
+}
+
+.rangeDensityContainer{
+    margin-top: 80px;
+    min-height: 100px;
+}
+
+.rangeDensity {
+    -webkit-appearance: none;
+    outline: none;
+    background-color: rgb(12, 12, 12);
+    border-radius: 30px;
+    overflow: hidden;
+    /* box-shadow: inset 0 0 10px rgba(0, 0, 0, 1); */
+    transform: rotate(-90deg);
+    height: 30px; /* mozilla */
+    cursor: pointer;
+}
+
+.rangeDensity::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #4a474a;
+    border: none;
+    /* border: 4px solid rgb(79, 73, 73); */
+    box-shadow: -414px 0 0 400px #A49FA4;
+}
+
+.rangeDensity::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: -410px 0 0 400px #A49FA4;
+}
+
+.theOdinProject{
+    position: relative;
+    top: -60px;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 3px 1px 1px rgba(239, 210, 210, 0.3);
+    color: #cc2b2e; 
+    
+}
+
+.theOdinProject >span{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* PLAYROOM */
+.playroom{
+    background-color: rgb(12, 12, 12);
+    width: calc(550px + (100 - 50) * ((100vw - 500px) / (1920 - 500)));
+    height: calc(550px + (100 - 50) * ((100vw - 500px) / (1920 - 500)));
+    display: flex;
+    /* flex-flow: row wrap; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    background: rgb(255, 255, 255);
+    opacity: 0;
+    flex: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover { background: white; }
+
+.resetPlayroom{
+    cursor: pointer;
+    color: rgb(239, 42, 7);
+}
+
+.resetPlayroom:hover{
+    color: rgb(234, 72, 43);
+}
+
+.eraseMode{
+    color: #cac0ca;
+    cursor: pointer;
+}
+.eraseMode.active{
+    color: white;
+}
