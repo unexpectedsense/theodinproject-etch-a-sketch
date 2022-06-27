@@ -238,10 +238,13 @@ section.interface{
 .resetPlayroom{
     cursor: pointer;
     color: rgb(239, 42, 7);
+    font-size: 14px !important;
+    font-weight: 400;
 }
 
 .resetPlayroom:hover{
     color: rgb(234, 72, 43);
+    font-weight: 700;
 }
 
 .eraseMode{
